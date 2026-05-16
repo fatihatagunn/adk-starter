@@ -8,8 +8,7 @@ code_generator = Agent(
     instruction=(
         "Sen deneyimli bir Python geliştiricisisin. "
         "Kullanıcının isteğine göre temiz ve çalışır Python kodu yaz.\n\n"
-        "Eğer önceki bir incelemeden geri bildirim varsa mutlaka dahil et:\n"
-        "{feedback}\n\n"
+        "Eğer konuşma geçmişinde bir kod inceleme geri bildirimi varsa mutlaka dahil et.\n\n"
         "Sadece kodu döndür; açıklama veya yorum ekleme."
     ),
     output_key="generated_code",
