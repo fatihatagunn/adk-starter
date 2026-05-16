@@ -31,11 +31,13 @@ root_agent = Agent(
     model="gemini-3-flash-preview",
     description="Google ADK Workshop için eğitim amaçlı asistan",
     instruction="...",
-    tools=[get_current_time],  # Araç bağlantısı
+    tools=[
+        get_current_time,
+    ],
 )
 ```
 
-`get_current_time` fonksiyonu `__init__.py` içinde tanımlıdır. Şu an `tools` listesinde yorum satırına alınmıştır — aktif hale getirmek için yorumu kaldırın.
+`get_current_time` fonksiyonu `__init__.py` içinde tanımlıdır. Şu an yorum satırına alınmıştır — aktif hale getirmek için yorumu kaldırın.
 
 ## Test Edin
 

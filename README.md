@@ -17,9 +17,6 @@ Cloud Shell
 ├── s01_adk/
 │   └── __init__.py       ← Agent tanımı + araçlar
 │
-├── tools/
-│   └── time.py           ← Paylaşılan araçlar
-│
 ├── Dockerfile             ← Cloud Run için konteyner
 └── requirements.txt
 
@@ -278,9 +275,6 @@ adk-starter/
 ├── s06_sequential/        # Adım 6: Sequential Workflow
 ├── s07_parallel/          # Adım 7: Parallel Workflow
 ├── s08_loop/              # Adım 8: Loop Workflow
-├── tools/
-│   ├── __init__.py
-│   └── time.py            # Paylaşılan araçlar
 ├── Dockerfile             # Cloud Run konteyner tanımı
 ├── requirements.txt       # Python bağımlılıkları
 ├── .env.example           # Ortam değişkenleri şablonu
