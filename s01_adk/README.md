@@ -28,7 +28,7 @@ Agent'a verilen Python fonksiyonlarıdır. ADK, fonksiyonun imzasını ve docstr
 ```python
 root_agent = Agent(
     name="adk_agent",
-    model="gemini-flash-latest",
+    model="gemini-3-flash-preview",
     description="Google ADK Workshop için eğitim amaçlı asistan",
     instruction="...",
     tools=[get_current_time],  # Araç bağlantısı

@@ -3,7 +3,7 @@ from google.adk.tools import exit_loop
 
 code_generator = Agent(
     name="code_generator",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Kullanıcı isteğine göre Python kodu yazan ve geri bildirimleri dahil eden ajan",
     instruction=(
         "Sen deneyimli bir Python geliştiricisisin. "
@@ -17,7 +17,7 @@ code_generator = Agent(
 
 code_reviewer = Agent(
     name="code_reviewer",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Kodu inceleyen, geri bildirim veren ve yeterince iyiyse döngüyü sonlandıran ajan",
     instruction=(
         "Sen kıdemli bir yazılım mühendisisin. Aşağıdaki kodu incele:\n\n"

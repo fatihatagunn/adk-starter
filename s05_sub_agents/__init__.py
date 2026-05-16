@@ -2,7 +2,7 @@ from google.adk.agents import Agent
 
 order_agent = Agent(
     name="order_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Sipariş durumu, teslimat takibi ve iade işlemleri uzmanı",
     instruction=(
         "Sen bir sipariş destek uzmanısın. Kullanıcının sipariş durumu, "
@@ -17,7 +17,7 @@ order_agent = Agent(
 
 after_sale_agent = Agent(
     name="after_sale_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Ürün arızaları, garanti talepleri ve teknik destek uzmanı",
     instruction=(
         "Sen bir satış sonrası teknik destek uzmanısın. Ürün arızaları, "
@@ -32,7 +32,7 @@ after_sale_agent = Agent(
 
 root_agent = Agent(
     name="support_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Kullanıcıyı doğru destek ajanına yönlendiren müşteri hizmetleri koordinatörü",
     instruction=(
         "Sen bir müşteri hizmetleri koordinatörüsün. Kullanıcının talebini "

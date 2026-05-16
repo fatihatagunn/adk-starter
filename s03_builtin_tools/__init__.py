@@ -3,7 +3,7 @@ from google.adk.tools import google_search
 
 root_agent = Agent(
     name="news_search_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Google Arama ile güncel haberleri ve bilgileri bulan ajan",
     instruction=(
         "Sen bir haber ve araştırma asistanısın. Kullanıcının sorduğu konularda "

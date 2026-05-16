@@ -2,7 +2,7 @@ from google.adk.agents import Agent, ParallelAgent, SequentialAgent
 
 company_profiler = Agent(
     name="company_profiler",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Şirketin genel profilini çıkaran ajan",
     instruction=(
         "Kullanıcının belirttiği şirket hakkında kısa bir profil hazırla: "
@@ -15,7 +15,7 @@ company_profiler = Agent(
 
 news_finder = Agent(
     name="news_finder",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Şirketin son dönem haberlerini özetleyen ajan",
     instruction=(
         "Kullanıcının belirttiği şirketle ilgili son dönemde öne çıkan "
@@ -27,7 +27,7 @@ news_finder = Agent(
 
 financial_analyst = Agent(
     name="financial_analyst",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Şirketin finansal durumunu analiz eden ajan",
     instruction=(
         "Kullanıcının belirttiği şirketin finansal durumunu analiz et: "
@@ -46,7 +46,7 @@ market_researcher = ParallelAgent(
 
 report_compiler = Agent(
     name="report_compiler",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Toplanan verileri kapsamlı bir şirket raporuna dönüştüren ajan",
     instruction=(
         "Aşağıdaki bilgileri kullanarak kapsamlı ve okunabilir bir şirket "

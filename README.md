@@ -152,7 +152,7 @@ cat s01_adk/__init__.py
 ```python
 root_agent = Agent(
     name="adk_agent",
-    model="gemini-flash-latest",        # Kullanılacak Gemini modeli
+    model="gemini-3-flash-preview",        # Kullanılacak Gemini modeli
     description="...",                  # Agentin kısa açıklaması
     instruction="...",                  # Sistem promptu (agent davranışını belirler)
     tools=[get_current_time],           # Agente verilen araçlar

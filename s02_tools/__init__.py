@@ -34,7 +34,7 @@ def lookup_stock_ticker(company_name: str) -> dict:
 
 root_agent = Agent(
     name="stock_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Şirket adından borsa sembolünü bulan ajan",
     instruction=(
         "Sen bir borsa uzmanısın. Kullanıcı bir şirket adı verdiğinde "

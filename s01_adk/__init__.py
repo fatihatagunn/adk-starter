@@ -29,7 +29,7 @@ def get_current_time(timezone: str = "Europe/Istanbul") -> dict:
 
 root_agent = Agent(
     name="adk_agent",
-    model="gemini-flash-latest",
+    model="gemini-3-flash-preview",
     description="Google ADK Workshop için eğitim amaçlı asistan",
     instruction=(
         "Sen Google ADK (Agent Development Kit) workshop'u için hazırlanmış "

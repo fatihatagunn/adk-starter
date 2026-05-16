@@ -4,7 +4,7 @@ from google.adk.tools.agent_tool import AgentTool
 
 search_specialist = Agent(
     name="search_specialist",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Google Arama yapan uzman ajan — doğrudan kullanıcıyla konuşmaz",
     instruction=(
         "Sen bir arama uzmanısın. Verilen konu hakkında google_search aracını kullanarak "
@@ -16,7 +16,7 @@ search_specialist = Agent(
 
 root_agent = Agent(
     name="main_researcher",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Araştırmacı ajan — arama ajanını araç olarak çağırır ve sonuçları yorumlar",
     instruction=(
         "Sen bir araştırmacısın. Kullanıcının sorusunu yanıtlamak için "

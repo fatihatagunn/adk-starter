@@ -2,7 +2,7 @@ from google.adk.agents import Agent, SequentialAgent
 
 poet = Agent(
     name="poet",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="Verilen konu hakkında kısa şiir yazan ajan",
     instruction=(
         "Sen yaratıcı bir şairsin. Kullanıcının verdiği konu hakkında "
@@ -14,7 +14,7 @@ poet = Agent(
 
 translator = Agent(
     name="translator",
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     description="İngilizce şiiri Türkçeye çeviren ajan",
     instruction=(
         "Sen yetenekli bir şiir çevirmenisin. Aşağıdaki şiiri Türkçeye çevir. "
