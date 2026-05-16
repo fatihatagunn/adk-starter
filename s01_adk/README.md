@@ -35,7 +35,7 @@ root_agent = Agent(
 )
 ```
 
-`get_current_time` aracı `tools/time.py` içinde tanımlanmıştır. Şu an `__init__.py` içinde yorum satırına alınmıştır — aktif hale getirmek için yorumu kaldırın.
+`get_current_time` fonksiyonu `__init__.py` içinde tanımlıdır. Şu an `tools` listesinde yorum satırına alınmıştır — aktif hale getirmek için yorumu kaldırın.
 
 ## Test Edin
 
