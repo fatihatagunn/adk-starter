@@ -249,12 +249,35 @@ gcloud artifacts repositories delete cloud-run-source-deploy \
 
 ---
 
+## Workshop Adımları
+
+Proje kurulumu tamamlandıktan sonra aşağıdaki adımları sırayla takip edin. Her adım bağımsız bir Python paketi olarak tanımlıdır ve `adk web` arayüzünde ayrı ayrı seçilebilir.
+
+| Adım | Paket | Konu | README |
+|------|-------|------|--------|
+| 1 | `s01_adk/` | Temel Agent — instruction, model, tools | [→ Adım 1](s01_adk/README.md) |
+| 2 | `s02_tools/` | Özel Araçlar — Python fonksiyonu tool olarak | [→ Adım 2](s02_tools/README.md) |
+| 3 | `s03_builtin_tools/` | Yerleşik Araçlar — Google Search | [→ Adım 3](s03_builtin_tools/README.md) |
+| 4 | `s04_agent_as_tool/` | Agent'ı Araç Olarak Kullanmak — AgentTool | [→ Adım 4](s04_agent_as_tool/README.md) |
+| 5 | `s05_sub_agents/` | Alt Ajan Yönlendirme — Sub-agent delegation | [→ Adım 5](s05_sub_agents/README.md) |
+| 6 | `s06_sequential/` | Sıralı İş Akışı — SequentialAgent | [→ Adım 6](s06_sequential/README.md) |
+| 7 | `s07_parallel/` | Paralel İş Akışı — ParallelAgent | [→ Adım 7](s07_parallel/README.md) |
+| 8 | `s08_loop/` | Döngüsel İyileştirme — LoopAgent + exit_loop | [→ Adım 8](s08_loop/README.md) |
+
+---
+
 ## Proje Yapısı
 
 ```
 adk-starter/
-├── s01_adk/
-│   └── __init__.py        # Agent tanımı (Adım 1)
+├── s01_adk/               # Adım 1: Temel Agent
+├── s02_tools/             # Adım 2: Özel Araçlar
+├── s03_builtin_tools/     # Adım 3: Yerleşik Araçlar
+├── s04_agent_as_tool/     # Adım 4: Agent as Tool
+├── s05_sub_agents/        # Adım 5: Sub-agent Delegation
+├── s06_sequential/        # Adım 6: Sequential Workflow
+├── s07_parallel/          # Adım 7: Parallel Workflow
+├── s08_loop/              # Adım 8: Loop Workflow
 ├── tools/
 │   ├── __init__.py
 │   └── time.py            # Paylaşılan araçlar
@@ -266,19 +289,11 @@ adk-starter/
 
 ---
 
-## Sonraki Adımlar
-
-Workshop'u tamamladıktan sonra aşağıdaki konuları keşfedebilirsiniz:
-
-- **Daha fazla araç eklemek**: Google Search, Code Execution, Custom API çağrıları
-- **Multi-agent sistemler**: Agent'ları birbirini çağıracak şekilde organize etmek
-- **Oturum yönetimi**: `SessionService` ile konuşma geçmişini yönetmek
-- **Değerlendirme**: `adk eval` ile agent testleri yazmak
-- **Farklı modeller**: `gemini-2.5-pro`, `gemini-2.0-flash-thinking` gibi modelleri denemek
-
-### Faydalı Bağlantılar
+## Faydalı Bağlantılar
 
 - [Google ADK Dokümantasyonu](https://google.github.io/adk-docs/)
+- [ADK Resmi Site](https://adk.dev/)
 - [Google ADK GitHub](https://github.com/google/adk-python)
-- [Vertex AI Fiyatlandırma](https://cloud.google.com/vertex-ai/generative-ai/pricing)
+- [Google ADK Örnekleri](https://github.com/google/adk-samples)
+- [Agent Starter Pack](https://github.com/GoogleCloudPlatform/agent-starter-pack)
 - [Cloud Run Fiyatlandırma](https://cloud.google.com/run/pricing)
