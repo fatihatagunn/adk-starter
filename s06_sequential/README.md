@@ -65,7 +65,7 @@ Deniz hakkında bir şiir yaz
 ```
 
 ```
-Write a poem about mountains
+Write a poem about mountains in English and translate to Turkish.
 ```
 
 ```
